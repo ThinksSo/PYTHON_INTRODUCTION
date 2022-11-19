@@ -1,1 +1,10 @@
-# INTRODUCTION-TO-PYTHON
+#  PYTHON INTRODUCTION
+* NUMBERS - ЧИСЛА
+* LOGIC - ЛОГИЧЕСКИЕ ПЕРЕМЕННЫЕ
+* ARRAY - МАССИВ/СПИСОК
+* INPUT - ВВОД ДАННЫХ
+* АРИФМЕТИЧЕСКИЕ ОПЕРАЦИИ
+* LOGIC - ЛОГИЧЕСКИЕ ОПЕРАЦИИ
+* УПРАВЛЯЮЩИЕ КОНСТРУКЦИИ
+* СПИСКИ
+* FUNCTION - ФУНКЦИИ
