@@ -42,14 +42,14 @@ print('\n')
 
 
 # INPUT - ВВОД ДАННЫХ
-# print('Enter x')
-# x = int(input())
-# print('Enter y')
-# y = int(input())
-# print(x, '+', y, ' = ', x+y)
-# print('{} {}'.format(x, y))
-# print(f'{x} {y}')
-# print('\n')
+print('Enter x')
+x = int(input())
+print('Enter y')
+y = int(input())
+print(x, '+', y, ' = ', x+y)
+print('{} {}'.format(x, y))
+print(f'{x} {y}')
+print('\n')
 
 # АРИФМЕТИЧЕСКИЕ ОПЕРАЦИИ
 
@@ -97,16 +97,16 @@ print('\n')
 
 # УПРАВЛЯЮЩИЕ КОНСТРУКЦИИ
 # if, elif, else
-# a = int(input('a = '))
-# b = int(input('b = '))
-# c = int(input('c = '))
-# if a > b:
-#     print(a, '>', b)
-# elif b > c:
-#     print(b, '>', c, ', ', a)
-# else:
-#     print(c, '>', a, ', ', b)
-# print('\n')
+a = int(input('a = '))
+b = int(input('b = '))
+c = int(input('c = '))
+if a > b:
+    print(a, '>', b)
+elif b > c:
+    print(b, '>', c, ', ', a)
+else:
+    print(c, '>', a, ', ', b)
+print('\n')
 
 # цикл while
 original = 23
