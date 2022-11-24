@@ -1,7 +1,7 @@
 # 1. Программа принимает на вход два числа и проверяет, является ли одно квадратом другого
 # Option 1.1
 num1 = int(input('Enter first number '))
-num2 = int(input('Enter first number '))
+num2 = int(input('Enter second number '))
 if num1 ** 2 == num2 or num2 ** 2 == num1:
     print('Yes')
 else:
