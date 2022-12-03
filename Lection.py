@@ -170,13 +170,15 @@ for e in colors:
     print(e)        # red green blue
 
 colors.append('yellow')
-print(colors == ['red', 'green', 'blue', 'yellow']) # True
+print(colors == ['red', 'green', 'blue', 'yellow'])  # True
 colors.remove('red')    # del colors[0] - удалить элемент
 print(colors)
 
 print('\n')
 
 # FUNCTION - ФУНКЦИИ
+
+
 def f(x):
     if x == 1:
         return 'Int'
@@ -184,6 +186,7 @@ def f(x):
         return 23
     else:
         return
+
 
 arg = 1
 print(f(arg))
