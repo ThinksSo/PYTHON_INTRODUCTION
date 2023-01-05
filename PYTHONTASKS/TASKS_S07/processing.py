@@ -2,6 +2,7 @@ import user_menu
 import data_save
 import data_export
 import data_import
+import fimport
 
 
 def user_choice():
@@ -24,6 +25,10 @@ def user_choice():
         user_choice()
     elif choice == "3":
         data_export.search()
+        enter = input("Press Enter to continue ...")
+        user_choice()
+    elif choice == "4":
+        fimport.import_file()
         enter = input("Press Enter to continue ...")
         user_choice()
     elif choice == "0":
