@@ -76,6 +76,16 @@ def show(message):
     bot.send_message(message.chat.id, 'Sorry, feature under development')
 
 
+@bot.message_handler(commands=["wiki"])
+def wiki(message):
+    bot.send_message(message.chat.id, 'Отправьте мне любое слово, и я найду его значение на Wikipedia')
+    bot.register_next_step_handler(message, handle_text)
+
+
+def handle_text(message):
+    bot.send_message(message.chat.id, getwiki(message.text))
+
+
 key_words = "Boss"
 
 
@@ -89,22 +99,13 @@ def echo(message):
         bot.send_message(message.chat.id, get_joke())
     elif message.text == 'Help':
         help_menu(message)
-    elif message.text == 'Wiki':
-        bot.send_message(message.chat.id, 'Отправьте мне любое слово, и я найду его значение на Wikipedia')
-        bot.send_message(message.chat.id, wiki())
+    elif message.text == 'Wiki' or message.text == 'wiki':
+        wiki(message)
     else:
         bot.send_message(message.chat.id, message.text)
 
 
-@bot.message_handler(commands=["wiki"])
-def wiki(message):
-    bot.send_message(message.chat.id, 'Отправьте мне любое слово, и я найду его значение на Wikipedia')
-@bot.message_handler(content_types=["text"])
-def handle_text(message):
-    bot.send_message(message.chat.id, getwiki(message.text))
-
 wikipedia.set_lang("ru")
-
 def getwiki(s):
     try:
         ny = wikipedia.page(s)
