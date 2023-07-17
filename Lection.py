@@ -100,12 +100,28 @@ print('\n')
 a = int(input('a = '))
 b = int(input('b = '))
 c = int(input('c = '))
-if a > b:
-    print(a, '>', b)
+print('\n')
+
+# Option 1
+if a > b & a > c:
+    print(a, '>', b, '&', c)
 elif b > c:
-    print(b, '>', c, ', ', a)
+    print(b, '>', c, '&', a)
 else:
-    print(c, '>', a, ', ', b)
+    print(c, '>', a, '&', b)
+print('\n')
+
+
+# Option 2
+if a > b:
+    if a > c:
+        print(a, '>', b, '&', c)
+    else:
+        print(c, '>', a, '&', b)
+elif b > c:
+    print(b, '>', c, '&', a)
+else:
+    print(c, '>', a, '&', b)
 print('\n')
 
 # цикл while
